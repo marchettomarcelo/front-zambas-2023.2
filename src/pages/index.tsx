@@ -73,7 +73,7 @@ export default function Component() {
 					</div>
 				</div>
 			</section>
-			<section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200">
+			<section className="py-16 px-4 sm:px-6 lg:px-8 bg-zinc-300">
 				<h2 className="text-3xl font-bold text-center">O Que Nossos Clientes Dizem</h2>
 				<div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 					<div className="flex flex-col items-center text-center">
@@ -123,7 +123,7 @@ export default function Component() {
 					</div>
 				</div>
 			</section>
-			<footer className="bg-green-800">
+			<footer className="bg-green-900">
 				<nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex justify-between items-center">
 					<Link className="text-white text-lg font-semibold" href="#">
 						<span>Home Broker</span>

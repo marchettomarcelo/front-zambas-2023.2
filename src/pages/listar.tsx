@@ -103,8 +103,8 @@ export function PropertyForm() {
 									</SelectTrigger>
 								</FormControl>
 								<SelectContent>
-									<SelectItem value="venda">Para Venda</SelectItem>
-									<SelectItem value="aluguel">Para Aluguel</SelectItem>
+									<SelectItem value="Venda">Para Venda</SelectItem>
+									<SelectItem value="Aluguel">Para Aluguel</SelectItem>
 								</SelectContent>
 							</Select>
 						</FormItem>

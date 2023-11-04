@@ -42,19 +42,39 @@ const data = [
 	},
 ];
 
-function getImoveis() {
-	return data;
-}
+async function getImoveis() {
+	const data = await axios.get("http://3.134.139.76:8080/imovel");
+	console.log("data", data.data);
 
+	return data.data;
+}
 
 // infer the type of the data variable
 
 type FormSchemaType = z.infer<typeof FormSchema>;
 
-
 async function postImoveis(params: FormSchemaType) {
-    console.log("na funca", params);
-	return "bom dia"
+	// 	{
+	//     "email": "admin@sa.com",
+	//     "token": "HqEMiDWdtVi0bfkSYBT3"
+	// }
+
+	const data = await axios.post(
+		"http://3.134.139.76:8080/imovel/create",
+		{
+			endereco: params.endereco,
+			preco: params.preco,
+			tipo: params.tipo,
+		},
+		{
+			headers: {
+				token: "HqEMiDWdtVi0bfkSYBT3",
+			},
+		}
+	);
+
+	console.log(data);
+	return data;
 }
 
 export { getImoveis, postImoveis };
